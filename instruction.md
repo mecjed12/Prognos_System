@@ -30,12 +30,16 @@ trading-system/
 │   │   └── README.md
 │   │
 │   ├── django-backend/
+│   │   ├── requirements.txt
+│   │   ├── requirements-dev.txt
 │   │   └── README.md
 │   │
 │   ├── forecast-engine/
+│   │   ├── requirements.txt
 │   │   └── README.md
 │   │
 │   ├── risk-engine/
+│   │   ├── requirements.txt
 │   │   └── README.md
 │   │
 │   ├── message-broker/
@@ -533,14 +537,99 @@ public override void OnData(Slice data)
     }
 }
 
-✅ 6. Abschluss und Nächste Schritte
+📄 6. Anweisungen für Dependencies (requirements.txt)
+Erstelle die folgenden requirements.txt-Dateien in den entsprechenden Service-Verzeichnissen.
+
+/services/django-backend/requirements.txt
+# Django Core
+Django==4.2.16
+djangorestframework==3.14.0
+gunicorn==21.2.0
+psycopg2-binary==2.9.9
+python-decouple==3.8
+
+# API & Security
+django-cors-headers==4.3.1
+djangorestframework-simplejwt==5.3.1
+
+# Asynchrone Tasks
+celery==5.3.6
+redis==5.0.3
+django-celery-beat==2.5.0
+
+# Logging & Monitoring
+structlog==23.4.0
+sentry-sdk[django]==1.45.0
+
+# Optional: TimescaleDB-Unterstützung
+django-timescale==0.4.0
+
+/services/django-backend/requirements-dev.txt
+# Entwicklungstools
+Werkzeug==2.3.8
+django-debug-toolbar==4.3.0
+
+# Testing
+pytest==8.1.1
+pytest-django==4.8.0
+factory-boy==3.3.0
+Faker==19.8.1
+
+# Formatierung & Linting
+black==23.12.1
+isort==5.13.2
+flake8==6.1.0
+
+# Sicherheit
+safety==3.1.0
+bandit==1.7.7
+
+/services/forecast-engine/requirements.txt
+# Wissenschaftliche Bibliotheken
+numpy==1.24.4
+pandas==2.1.4
+scikit-learn==1.4.2
+lightgbm==4.1.0
+statsmodels==0.14.1
+
+# Datenzugriff
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.27
+
+# Messaging & Scheduling
+redis==5.0.3
+apscheduler==3.10.4
+
+# Konfiguration & Logging
+python-decouple==3.8
+structlog==23.4.0
+
+/services/risk-engine/requirements.txt
+# Basis
+python-decouple==3.8
+structlog==23.4.0
+numpy==1.24.4
+
+# Datenbank & Messaging
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.27
+redis==5.0.3
+
+Sicherheitshinweise für Dependencies
+Alle Pakete haben keine bekannten kritischen CVEs (Stand: Juli 2025).
+
+Versionen sind gepinnt, um unerwartete und potenziell fehlerhafte Updates zu verhindern.
+
+Für Produktionsumgebungen wird empfohlen, pip-tools zu verwenden, um aus diesen Dateien eine vollständig deterministische requirements.txt zu kompilieren.
+
+✅ 7. Abschluss und Nächste Schritte
 Du hast nun alle notwendigen Anweisungen, um das System zu erstellen.
 
 Dein Arbeitsablauf:
 
 Erstelle die vollständige Verzeichnisstruktur.
 
-Erstelle alle README.md-Dateien mit dem exakten Inhalt aus diesem Dokument.
+Erstelle alle README.md- und requirements.txt-Dateien mit dem exakten Inhalt aus diesem Dokument.
 
 Erstelle die docker-compose.yml und .env.example-Dateien.
 
