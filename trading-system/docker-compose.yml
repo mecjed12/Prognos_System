@@ -44,7 +44,7 @@ services:
     build: ./services/frontend
     container_name: trading_ui
     ports:
-      - "3001:3001"
+      - "3000:3000"
     depends_on:
       - django-backend
     restart: unless-stopped
