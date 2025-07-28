@@ -1,0 +1,6 @@
+# Build-Tools
+setuptools==69.5.1
+
+redis==5.0.3
+python-decouple==3.8
+requests==2.31.0

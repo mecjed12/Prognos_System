@@ -1,0 +1,40 @@
+# Abhängigkeiten
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build-Artefakte
+/dist/
+/build/
+/*.js
+/*.map
+
+# Umgebungsvariablen
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Temporäre Dateien
+.tmp/
+*.tmp
+
+# IDEs und Editoren
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Coverage
+coverage/
+*.info
+
+# Übergabedateien
+.nyc_output/
+.gitlab-ci.yml

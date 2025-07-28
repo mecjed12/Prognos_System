@@ -1,0 +1,31 @@
+# Build-Tools
+setuptools==69.5.1
+
+# Django Core
+Django==4.2.16
+djangorestframework==3.14.0
+gunicorn==21.2.0
+psycopg2-binary==2.9.9
+
+# Utilities
+numpy==1.26.4
+pandas==2.1.4
+python-decouple==3.8
+structlog==21.5.0
+redis==5.0.3
+celery==5.3.6
+djangorestframework-simplejwt==5.3.1
+
+# API & Security
+django-cors-headers==4.3.1
+django-filter==23.5
+
+# Asynchrone Tasks
+django-celery-beat==2.5.0
+
+# Logging & Monitoring
+structlog==21.5.0
+sentry-sdk[django]==1.45.0
+
+# Optional: TimescaleDB-Unterstützung
+# django-timescale==0.4.0  # Entfernt, da nicht verfügbar

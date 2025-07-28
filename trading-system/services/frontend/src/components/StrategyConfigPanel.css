@@ -1,0 +1,45 @@
+.strategy-config-panel {
+  margin: 20px 0;
+}
+
+.strategy-config-panel table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.strategy-config-panel th,
+.strategy-config-panel td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.strategy-config-panel th {
+  background-color: #f2f2f2;
+}
+
+.strategy-config-panel input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.strategy-config-panel button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.strategy-config-panel button:hover {
+  background-color: #0056b3;
+}
+
+.strategy-config-panel button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

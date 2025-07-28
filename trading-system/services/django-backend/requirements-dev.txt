@@ -1,0 +1,18 @@
+# Entwicklungstools
+Werkzeug==2.3.8
+django-debug-toolbar==4.3.0
+
+# Testing
+pytest==8.1.1
+pytest-django==4.8.0
+factory-boy==3.3.0
+Faker==19.8.1
+
+# Formatierung & Linting
+black==23.12.1
+isort==5.13.2
+flake8==6.1.0
+
+# Sicherheit
+safety==3.1.0
+bandit==1.7.7

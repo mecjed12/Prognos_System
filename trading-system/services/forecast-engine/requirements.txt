@@ -1,0 +1,21 @@
+# Build-Tools
+setuptools==69.5.1
+
+# Wissenschaftliche Bibliotheken
+numpy==1.26.4
+pandas==2.1.4
+scikit-learn==1.4.2
+lightgbm==4.1.0
+statsmodels==0.14.1
+
+# Datenzugriff
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.27
+
+# Messaging & Scheduling
+redis==5.0.3
+apscheduler==3.10.4
+
+# Konfiguration & Logging
+python-decouple==3.8
+structlog==21.5.0
